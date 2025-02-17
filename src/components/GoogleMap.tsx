@@ -2,7 +2,7 @@ import {useEffect, useRef} from 'react';
 
 const GoogleMap = ({setCss}: any) => {
   const mapRef = useRef<HTMLDivElement>(null);
-  const API_KEY = 'AIzaSyAvJz-K8EKZXNWr-Vb1cy4SYxI8A5XW2K8';
+  const API_KEY = process.env.REACT_APP_GOOGLE_MAPS_API_KEY;
 
   useEffect(() => {
     const script = document.createElement('script');
