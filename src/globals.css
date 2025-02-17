@@ -1,0 +1,5 @@
+@import 'tailwindcss';
+
+body {
+  @apply mx-10 mt-2;
+}
